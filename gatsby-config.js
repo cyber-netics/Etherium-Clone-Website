@@ -35,6 +35,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        stages: ["develop"],
+        extensions: ["js", "jsx"],
+        exclude: ["node_modules", ".cache", "public"],
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
     // Needed for `gatsby-image`
     `gatsby-plugin-sharp`,

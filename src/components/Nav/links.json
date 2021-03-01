@@ -108,5 +108,28 @@
       "text": "community",
       "to": "/community/"
     }
+  ],
+  "ednLinks": [
+    {
+      "text": "home",
+      "to": "/developers/",
+      "isPartiallyActive": false
+    },
+    {
+      "text": "docs",
+      "to": "/developers/docs/"
+    },
+    {
+      "text": "tutorials",
+      "to": "/developers/tutorials/"
+    },
+    {
+      "text": "learn-by-coding",
+      "to": "/developers/learning-tools/"
+    },
+    {
+      "text": "set-up-local-env",
+      "to": "/developers/local-environment/"
+    }
   ]
 }

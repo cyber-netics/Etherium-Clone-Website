@@ -1,5 +1,5 @@
 import React, { useState, createRef } from "react"
-import { useOnClickOutside } from "./hook"
+import { useOnClickOutside } from "../../hooks/useOnClickOutside"
 
 import Text from "../Text"
 

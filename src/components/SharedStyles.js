@@ -25,6 +25,24 @@ export const LeftColumn = styled.div`
   }
 `
 
+export const NavLink = styled.a`
+  text-decoration: none;
+  margin-right: 2rem;
+  color: ${props => props.theme.colors.text};
+  svg {
+    fill: ${props => props.theme.colors.text200};
+  }
+  &:hover {
+    color: ${props => props.theme.colors.primary};
+    svg {
+      fill: ${props => props.theme.colors.primary};
+    }
+  }
+  &.active {
+    font-weight: bold;
+  }
+`
+
 // Headers
 export const H2 = styled.h2`
   ${Mixins.textLevel2}

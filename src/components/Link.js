@@ -35,14 +35,7 @@ const GlossaryIcon = styled(Icon)`
   }
 `
 
-const Link = ({
-  to,
-  href,
-  children,
-  hideArrow = false,
-  className,
-  isPartiallyActive = true,
-}) => {
+const Link = ({ to, href, children, className, isPartiallyActive = true }) => {
   // markdown pages pass `href`, not `to`
   to = to || href
 
