@@ -6,6 +6,7 @@ import Text from "../components/Text"
 import CalloutBanner from "../components/CalloutBanner"
 import ButtonLink from "../components/ButtonLink"
 import Icon from "../components/Icon"
+import PageMetadata from "../components/PageMetadata"
 
 import {
   GrayContainer,
@@ -172,6 +173,10 @@ const StyledIcon = styled(Icon)`
 const IndexPage = ({ data }) => {
   return (
     <Page>
+      <PageMetadata
+        title={"page-index-meta-title"}
+        description={"page-index-meta-description"}
+      />
       <Hero
         fluid={data.hero.childImageSharp.fluid}
         alt={"page-index-hero-image-alt"}

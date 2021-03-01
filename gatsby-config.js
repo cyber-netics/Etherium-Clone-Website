@@ -1,8 +1,16 @@
+const defaultLanguage = `en`
+const siteUrl = `https://ethereum.org`
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    // `title` & `description` pulls from respective ${lang}.json files in PageMetadata.js
+    title: `ethereum.org`,
+    description: `Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.`,
+    url: siteUrl,
+    siteUrl,
+    author: `@ethereum`,
+    defaultLanguage,
+    editContentUrl: `https://github.com/ethereum/ethereum-org-website/tree/dev/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,6 +46,81 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-lodash`,
+      options: {
+        disabledFeatures: [
+          `shorthands`,
+          `currying`,
+          `caching`,
+          `collections`,
+          `exotics`,
+          `guards`,
+          `metadata`,
+          `deburring`,
+          `unicode`,
+          `chaining`,
+          `momoizing`,
+          `coercions`,
+          `flattening`,
+          `paths`,
+          `placeholders`,
+        ],
+      },
+    },
+    `gatsby-plugin-sharp`,
+    // CSS in JS
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `{
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }`,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes
+            .filter(node => {
+              // Filter out 404 pages
+              return !node.path.includes("404")
+            })
+            .map(node => {
+              const path = node.path
+              const url = `${site.siteMetadata.siteUrl}${path}`
+              const changefreq = path.includes(`/${defaultLanguage}/`)
+                ? `weekly`
+                : `monthly`
+              const priority = path.includes(`/${defaultLanguage}/`) ? 0.7 : 0.5
+              return {
+                url,
+                changefreq,
+                priority,
+              }
+            }),
       },
     },
   ],
