@@ -1,0 +1,85 @@
+{
+  "socialLinks": [
+    {
+      "icon": "github",
+      "to": "https://github.com/ethereum/ethereum-org-website"
+    },
+    {
+      "icon": "twitter",
+      "to": "https://twitter.com/ethdotorg"
+    },
+    {
+      "icon": "youtube",
+      "to": "https://youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g"
+    },
+    {
+      "icon": "discord",
+      "to": "https://discord.gg/CetY6Y4"
+    }
+  ],
+  "linkSections": [
+    {
+      "title": "Projects",
+      "links": [
+        {
+          "to": "/proj1/",
+          "text": "Project 1"
+        },
+        {
+          "to": "/proj2/",
+          "text": "Project 2"
+        },
+        {
+          "to": "/proj3/",
+          "text": "Project 3"
+        },
+        {
+          "to": "/proj4/",
+          "text": "project 4"
+        }
+      ]
+    },
+    {
+      "title": "learn",
+      "links": [
+        {
+          "to": "/proj1/",
+          "text": "Project 1"
+        },
+        {
+          "to": "/proj2/",
+          "text": "Project 2"
+        },
+        {
+          "to": "/proj3/",
+          "text": "Project 3"
+        },
+        {
+          "to": "/proj4/",
+          "text": "project 4"
+        }
+      ]
+    },
+    {
+      "title": "developers",
+      "links": [
+        {
+          "to": "/proj1/",
+          "text": "Project 1"
+        },
+        {
+          "to": "/proj2/",
+          "text": "Project 2"
+        },
+        {
+          "to": "/proj3/",
+          "text": "Project 3"
+        },
+        {
+          "to": "/proj4/",
+          "text": "project 4"
+        }
+      ]
+    }
+  ]
+}
