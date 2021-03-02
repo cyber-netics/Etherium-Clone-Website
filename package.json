@@ -34,13 +34,15 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^6.6.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-webpack-plugin": "^2.5.2",
     "gatsby-plugin-eslint": "^3.0.0",
     "husky": "^5.1.2",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "wait-on": "^5.2.1"
   },
   "keywords": [
     "gatsby"
@@ -54,6 +56,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "cypress": "cypress open",
+    "test:e2e": "cypress run --headed",
+    "e2e:dev": "npm run start & wait-on & npm run test:e2e",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "husky:setup": "husky install && yarn husky init",
