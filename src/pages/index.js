@@ -13,18 +13,10 @@ import {
   Content,
   LeftColumn,
   H2,
+  Page,
 } from "../components/SharedStyles"
 
 import Img from "gatsby-image"
-
-const Page = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
-  margin: 0 auto;
-`
 
 const Hero = styled(Img)`
   width: 100%;

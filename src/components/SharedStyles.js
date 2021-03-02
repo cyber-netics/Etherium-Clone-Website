@@ -43,6 +43,30 @@ export const NavLink = styled.a`
   }
 `
 
+export const Page = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto;
+`
+
+export const Divider = styled.div`
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  width: 10%;
+  height: 0.25rem;
+  background-color: ${props => props.theme.colors.homeDivider};
+`
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+`
+
 // Headers
 export const H2 = styled.h2`
   ${Mixins.textLevel2}
