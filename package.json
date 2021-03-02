@@ -56,7 +56,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "husky:setup": "husky install && yarn husky init"
+    "husky:setup": "husky install && yarn husky init",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
