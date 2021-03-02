@@ -184,12 +184,12 @@ const IndexPage = ({ data }) => {
       />
       <Header>
         <H1>
-          <Text id="Welcome-to-This-Website" />
+          <Text id="Welcome-to-tech-hub" />
         </H1>
         <Description>
-          <Text id="Ethereum is the community-run technology powering the cryptocurrency, ether (ETH) and thousands of decentralized applications." />
+          <Text id="Tech Hub to get updated about latest technologis and frameworks. All about web technologies and that will shape our future" />
         </Description>
-        <ButtonLink isSecondary to="/what-is-ethereum/">
+        <ButtonLink isSecondary to="/what-is-tech-hub/">
           <Text id="Learn More" />
         </ButtonLink>
       </Header>
@@ -201,7 +201,7 @@ const IndexPage = ({ data }) => {
                 <Text id="get-started" />
               </H2>
               <Subtitle>
-                <Text id="ethereum.org is your portal into the world of Ethereum. The tech is new and ever-evolving – it helps to have a guide. Here's what we recommend you do if you want to dive in." />
+                <Text id="Portal into the world of techologies. The tech is new and ever Evolvoing - it heps to have a guid to get started" />
               </Subtitle>
             </IntroLeftColumn>
             <ImageContainer>
@@ -212,7 +212,7 @@ const IndexPage = ({ data }) => {
             </ImageContainer>
           </IntroRow>
           <StyledCalloutBanner
-            title={"contribute to etherium"}
+            title={"contribute to the world of techologies"}
             description={
               "This website is open source with hundreds of community contributors. You can propose edits to any of the content on this site, suggest awesome new features, or help us squash bugs."
             }
@@ -226,7 +226,7 @@ const IndexPage = ({ data }) => {
               </ButtonLink>
               <StyledButtonLink
                 isSecondary
-                to="https://github.com/ethereum/ethereum-org-website"
+                to="https://github.com/cyber-netics/Etherium-Clone-Website"
               >
                 <StyledIcon name="github" /> GitHub
               </StyledButtonLink>
