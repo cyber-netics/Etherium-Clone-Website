@@ -1,16 +1,16 @@
 const defaultLanguage = `en`
-const siteUrl = `https://ethereum.org`
+const siteUrl = `https://example.org`
 
 module.exports = {
   siteMetadata: {
     // `title` & `description` pulls from respective ${lang}.json files in PageMetadata.js
-    title: `ethereum.org`,
-    description: `Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.`,
+    title: `example.org`,
+    description: `Tech Hub simple website starter with layout`,
     url: siteUrl,
     siteUrl,
-    author: `@ethereum`,
+    author: `@edo92`,
     defaultLanguage,
-    editContentUrl: `https://github.com/ethereum/ethereum-org-website/tree/dev/`,
+    editContentUrl: `https://github.com/cyber-netics/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
