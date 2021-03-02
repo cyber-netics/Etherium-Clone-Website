@@ -8,6 +8,7 @@ import PageHero from "../components/PageHero"
 import Text from "../components/Text"
 import Callout from "../components/Callout"
 import ActionCard from "../components/ActionCard"
+import PageMetadata from "../components/PageMetadata"
 
 import {
   Page,
@@ -115,6 +116,10 @@ const Page2 = ({ data }) => {
 
   return (
     <Page>
+      <PageMetadata
+        title={"page-index-meta-title"}
+        description={"page-index-meta-description"}
+      />
       <PageHero content={heroContent} />
       <Content>
         <Divider />
